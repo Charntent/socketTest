@@ -18,10 +18,10 @@ ini_set('display_errors', '1');
 //    echo $e->getMessage();exit();
 //}
 
-$http = new swoole_http_server("127.0.0.1", 9501);
+$http = new swoole_http_server("127.0.0.1", 39001);
 
 $http->on("start", function ($server) {
-    echo "Swoole http server is started at http://127.0.0.1:9501\n";
+    echo "Swoole http server is started at http://127.0.0.1:39001\n";
 });
 
 $http->on("request", function ($request, $response) {
